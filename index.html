@@ -1,248 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bennix Music | Official Website</title>
+<title>Bennix Music | Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-body{
-margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#111;
-color:white;
-}
-
-/* Navigation */
-nav{
-background: linear-gradient(90deg,#FF6B00,#FFC300,#009E60,#4B0082);
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
-}
-
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* Hero Section */
-header{
-padding:80px 20px;
-text-align:center;
-background: linear-gradient(45deg,#FF6B00,#4B0082);
-}
-
-header h1{
-font-size:60px;
-letter-spacing:4px;
-margin:10px 0;
-}
-
-header p{
-font-size:20px;
-}
-
-button{
-padding:12px 25px;
-border:none;
-background:white;
-color:black;
-font-weight:bold;
-border-radius:25px;
-cursor:pointer;
-}
-
-.submit-btn{
-background:#009E60;
-color:white;
-margin-top:15px;
-}
-
-/* Sections */
-section{
-padding:50px 20px;
-text-align:center;
-}
-
-h2{
-color:#FFC300;
-margin-bottom:20px;
-}
-
-/* Search Box */
-#searchInput{
-padding:12px;
-width:80%;
-max-width:400px;
-border-radius:25px;
-border:none;
-outline:none;
-margin-bottom:30px;
-}
-
-/* Music Card */
-.music-box{
-background:#222;
-margin:20px auto;
-padding:20px;
-max-width:400px;
-border-radius:15px;
-box-shadow:0 0 15px rgba(255,255,255,0.1);
-}
-
-.music-box button{
-margin-top:10px;
-background:#FF6B00;
-color:white;
-}
-
-footer{
-background:#000;
-padding:20px;
-text-align:center;
-color:gray;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<div class="top-bar">WELCOME TO BENNIX MUSIC</div>
+
 <nav>
-<a href="#">Home</a>
-<a href="#music">Music</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="https://wa.me/2349072008740?text=Hello%20MC%20BEN%2C%20I%20want%20to%20submit%20my%20music%20for%20upload" target="_blank">
-Submit Your Music
-</a>
+<a href="music.html">MUSIC</a> |
+<a href="freebeats.html">FREEBEATS</a> |
+<a href="mixtapes.html">MIXTAPES</a> |
+<a href="videos.html">VIDEOS</a> |
+<a href="news.html">NEWS</a> |
+<a href="about.html">ABOUT</a> |
+<a href="https://wa.me/2349072008740" target="_blank">SUBMIT MUSIC</a> |
+<a href="https://mcbenboss.rechargewebsite.com" target="_blank">RECHARGE & DATA</a>
 </nav>
 
-<header>
-<img src="BENNIX.png" width="200" style="border-radius:50%; box-shadow:0 0 20px rgba(255,255,255,0.4); margin-bottom:20px;">
-<h1>BENNIX MUSIC</h1>
-<p>Afrobeat | Global Sound | Energy</p>
-<a href="#music"><button>Listen Now</button></a>
-<br><br>
-<a href="https://wa.me/2349072008740?text=Hello%20MC%20BEN%2C%20I%20want%20to%20submit%20my%20music%20for%20upload" target="_blank">
-<button class="submit-btn">Submit Your Music</button>
-</a>
-</header>
+<div class="section-title">FEATURED SONGS</div>
 
-<section id="music">
-<h2>My Music</h2>
-<input type="text" id="searchInput" onkeyup="searchMusic()" placeholder="Search for a song...">
-
-  <header>
-<img src="BENNIXX.png" width="350" style="border-radius:50%; box-shadow:0 0 20px rgba(255,255,255,0.4); margin-bottom:20px;">
-<h1>BENNIX MUSIC</h1>
-<p>Afrobeat | Global Sound | Energy</p>
-    
-<!-- Song 1 -->
-<div class="music-box" id="truelife">
-<p>MC BEN X HEAVENLY BOY - True Life Story</p>
+<div class="music-card">
+<h3>MC BEN X HEAVENLY BOY - True Life Story</h3>
 <audio controls>
 <source src="MC BEN x heavenly boy.mp3" type="audio/mpeg">
 </audio>
 <br>
 <a href="MC BEN x heavenly boy.mp3" download><button>Download</button></a>
-<button onclick="shareSong('MC BEN X HEAVENLY BOY - True Life Story', 'https://mcbenboss.github.io/My-website-/#truelife')">Share</button>
+<button onclick="shareSong('MC BEN X HEAVENLY BOY - True Life Story')">Share</button>
 </div>
 
-<!-- Song 2 -->
-<div class="music-box" id="confuse">
-<p>MC Ben - Confuse</p>
-<audio controls>
-<source src="confuse.mp3" type="audio/mpeg">
-</audio>
-<br>
-<a href="confuse.mp3" download><button>Download</button></a>
-<button onclick="shareSong('MC Ben - Confuse', 'https://mcbenboss.github.io/My-website-/#confuse')">Share</button>
+<div class="recharge-banner" onclick="window.open('https://mcbenboss.rechargewebsite.com', '_blank')">
+CLICK HERE TO GET RECHARGE CARDS & DATA!
 </div>
 
-<!-- Song 3 -->
-<div class="music-box" id="ginger">
-<p>Nairaty ft Mc Ben - Ginger</p>
-<audio controls>
-<source src="ginger.mp3" type="audio/mpeg">
-</audio>
-<br>
-<a href="ginger.mp3" download><button>Download</button></a>
-<button onclick="shareSong('Nairaty ft Mc Ben - Ginger', 'https://mcbenboss.github.io/My-website-/#ginger')">Share</button>
-</div>
-
-<!-- Song 4 -->
-<div class="music-box" id="temptation">
-<p>Mc Ben - Temptation</p>
-<audio controls>
-<source src="temptation.mp3" type="audio/mpeg">
-</audio>
-<br>
-<a href="temptation.mp3" download><button>Download</button></a>
-<button onclick="shareSong('Mc Ben - Temptation', 'https://mcbenboss.github.io/My-website-/#temptation')">Share</button>
-</div>
-
-<!-- Song 5 -->
-<div class="music-box" id="fall">
-<p>Mc Ben - Fall for you</p>
-<audio controls>
-<source src="fall.mp3" type="audio/mpeg">
-</audio>
-<br>
-<a href="fall.mp3" download><button>Download</button></a>
-<button onclick="shareSong('Mc Ben - Fall for you', 'https://mcbenboss.github.io/My-website-/#fall')">Share</button>
-</div>
-
-</section>
-
-<section id="about">
-<h2>About MC BEN</h2>
-<p>MC BEN is a vibrant Afrobeat artist bringing rhythm, culture and powerful messages to the world stage.</p>
-</section>
-
-<section id="contact">
-<h2>Contact</h2>
-<p>Email: mcben0424@gmail.com</p>
-<p>WhatsApp: +2349072008740</p>
-</section>
-
-<footer>
-© 2026 MC BEN. All Rights Reserved.
-</footer>
+<footer>© 2026 BENNIX MUSIC | All Rights Reserved</footer>
 
 <script>
-// Search function
-function searchMusic() {
-let input = document.getElementById("searchInput");
-let filter = input.value.toLowerCase();
-let boxes = document.getElementsByClassName("music-box");
-
-for (let i = 0; i < boxes.length; i++) {
-let text = boxes[i].innerText.toLowerCase();
-if (text.includes(filter)) {
-boxes[i].style.display = "";
-} else {
-boxes[i].style.display = "none";
-}
-}
-}
-
-// Web Share API function
-function shareSong(title, url) {
-  if (navigator.share) {
-    navigator.share({
-      title: title,
-      url: url
-    })
-    .then(() => console.log('Shared successfully'))
-    .catch((error) => console.log('Error sharing:', error));
-  } else {
-    prompt("Copy this link to share:", url);
-  }
+function shareSong(title){
+  const mainLink = window.location.href;
+  if(navigator.share){
+    navigator.share({title:title,text:"Listen to this song:",url:mainLink})
+      .catch(()=>alert("Sharing failed"));
+  } else {prompt("Copy this link to share:",mainLink);}
 }
 </script>
 
 </body>
-</html>
+</html>￼Enter

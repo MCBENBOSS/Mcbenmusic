@@ -3,41 +3,44 @@
 <head>
 <title>Bennix Music | Freebeats</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/mcbenmusic/style.css">
 </head>
 <body>
 
 <div class="top-bar">FREEBEATS - BENNIX MUSIC</div>
 
 <nav>
-<a href="music.html">MUSIC</a> |
-<a href="freebeats.html">FREEBEATS</a> |
-<a href="mixtapes.html">MIXTAPES</a> |
-<a href="videos.html">VIDEOS</a> |
+<a href="/mcbenmusic/index.html">HOME</a> |
+<a href="/mcbenmusic/music.html">MUSIC</a> |
+<a href="/mcbenmusic/freebeat.html">FREEBEATS</a> |
+<a href="/mcbenmusic/mixtape.html">MIXTAPES</a> |
+<a href="/mcbenmusic/video.html">VIDEOS</a> |
+<a href="/mcbenmusic/news.html">NEWS</a> |
+<a href="/mcbenmusic/about.html">ABOUT</a> |
 <a href="https://wa.me/2349072008740" target="_blank">SUBMIT MUSIC</a> |
 <a href="https://mcbenboss.rechargewebsite.com" target="_blank">RECHARGE & DATA</a>
 </nav>
 
-<div class="section-title">FREEBEATS</div>
+<div class="section-title">FREEBEATS AVAILABLE</div>
 
-<div class="music-card">
-<h3>Afrobeat Instrumental [FREEBEAT]</h3>
+<div class="freebeat-card">
+<h3>Beat 1 - Afrobeat</h3>
 <audio controls>
-<source src="freebeat1.mp3" type="audio/mpeg">
+<source src="/mcbenmusic/freebeat1.mp3" type="audio/mpeg">
 </audio>
 <br>
-<a href="freebeat1.mp3" download><button>Download</button></a>
-<button onclick="shareSong('Afrobeat Instrumental [FREEBEAT]')">Share</button>
+<a href="/mcbenmusic/freebeat1.mp3" download><button>Download</button></a>
+<button onclick="shareSong('Beat 1 - Afrobeat')">Share</button>
 </div>
 
-<div class="music-card">
-<h3>Hip Hop Freebeat [FREEBEAT]</h3>
+<div class="freebeat-card">
+<h3>Beat 2 - Afro Pop</h3>
 <audio controls>
-<source src="freebeat2.mp3" type="audio/mpeg">
+<source src="/mcbenmusic/freebeat2.mp3" type="audio/mpeg">
 </audio>
 <br>
-<a href="freebeat2.mp3" download><button>Download</button></a>
-<button onclick="shareSong('Hip Hop Freebeat [FREEBEAT]')">Share</button>
+<a href="/mcbenmusic/freebeat2.mp3" download><button>Download</button></a>
+<button onclick="shareSong('Beat 2 - Afro Pop')">Share</button>
 </div>
 
 <footer>© 2026 BENNIX MUSIC | All Rights Reserved</footer>
@@ -46,11 +49,12 @@
 function shareSong(title){
   const mainLink = window.location.href;
   if(navigator.share){
-    navigator.share({title:title,text:"Listen to this song:",url:mainLink})
-      .catch(()=>alert("Sharing failed"));
-  } else {prompt("Copy this link to share:",mainLink);}
+    navigator.share({title:title,text:"Listen on Bennix Music:",url:mainLink});
+  } else {
+    prompt("Copy this link:", mainLink);
+  }
 }
 </script>
 
 </body>
-</html>
+  </html>
